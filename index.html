@@ -8,32 +8,49 @@
     <meta http-equiv="Content-Language" content="ru">
     <meta name="robots" content="index, follow">
     <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
       body {
-        background: #333642;
+        background-color: #333642;
         color: #ffffff;
+        font-family: system-ui, -apple-system, sans-serif;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding: 20px;
-        font-family: system-ui;
       }
 
-      .central-content {
+      .container {
         text-align: center;
-        max-width: 250px;
+        max-width: 400px;
+        width: 100%;
       }
 
-      .central-content img,
-      .central-content audio {
+      .sky-image {
+        width: 250px;
+        height: auto;
+        border-radius: 16px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
         display: block;
-        margin: 0 auto;
+        margin-bottom: 20px;
+      }
+
+      .caption {
+        font-size: 1.5rem;
+        font-weight: 300;
+        line-height: 1.2;
       }
     </style>
   </head>
   <body>
-    <div class="central-content">
-      <img src="assets/icon.png" style="border-radius: 16px;">
-      <br>
-      <h1>
-        Летнее звёздное небо
-      </h1>
+    <div class="container">
+      <img src="assets/icon.png" alt="Летнее звёздное небо" class="sky-image">
+      <p class="caption">Летнее звёздное небо</p>
     </div>
   </body>
 </html>
